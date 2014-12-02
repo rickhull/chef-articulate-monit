@@ -1,4 +1,4 @@
-name              "monit"
+name              "chef-monit-internal"
 maintainer        "Phil Cohen"
 maintainer_email  "github@phlippers.net"
 license           "MIT"
@@ -6,9 +6,9 @@ description       "Configures monit"
 long_description  "Please refer to README.md"
 version           "1.5.4"
 
-recipe "monit", "Sets up the service definition and default checks."
-recipe "monit::install_source", "Compiles and installs monit from source."
-recipe "monit::install_binary", "Installs monit from a binary package."
+recipe "chef-monit-internal", "Sets up the service definition and default checks."
+recipe "chef-monit-internal::install_source", "Compiles and installs monit from source."
+recipe "chef-monit-internal::install_binary", "Installs monit from a binary package."
 
 depends "build-essential"
 suggests "apt"

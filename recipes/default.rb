@@ -6,11 +6,11 @@
 include_recipe "apt" if platform_family?("debian") # ~FC007 uses `suggests`
 
 if node["monit"]["source_install"]
-  include_recipe "monit::install_source"
+  include_recipe "chef-monit-internal::install_source"
 elsif node["monit"]["binary_install"]
-  include_recipe "monit::install_binary"
+  include_recipe "chef-monit-internal::install_binary"
 else
-  include_recipe "monit::install_package"
+  include_recipe "chef-monit-internal::install_package"
 end
 
 # optionally use encrypted mail credentials
