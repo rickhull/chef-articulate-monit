@@ -1,7 +1,7 @@
 if node["monit"]["source_uninstall"]
-  include_recipe "chef-monit-internal::uninstall_source"
+  include_recipe "monit::uninstall_source"
 elsif node["monit"]["binary_uninstall"]
-  include_recipe "chef-monit-internal::uninstall_binary"
+  include_recipe "monit::uninstall_binary"
 else
   include_recipe "yum-epel" if platform_family?("rhel") # ~FC007 uses `suggests`
 
