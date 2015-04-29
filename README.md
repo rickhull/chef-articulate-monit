@@ -13,10 +13,7 @@ The following platforms are supported by this cookbook, meaning that the recipes
 
 * Ubuntu
 * Debian
-* RedHat
-* CentOS
 * Scientific
-* Fedora
 * SUSE
 * Amazon
 
